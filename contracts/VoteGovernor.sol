@@ -21,7 +21,6 @@ contract VoteGovernor  {
 
 
     constructor(){
-        voteToken = new VoteToken();
         deployer = msg.sender;
     }
 

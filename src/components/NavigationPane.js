@@ -5,36 +5,27 @@ class NavigationPane extends Component{
     render(){
         return (
 
-            <Navbar bg="dark" expand="lg" variant="dark">
+            <Navbar bg="light" expand="lg">
                 <Container>
-                    <Navbar.Brand href="#home">
-                        <img
-                            src="/logo.png"
-                            width="50"
-                            height="50"
-                            className="d-inline-block align-top"
-                            alt="logo"
-                        />
+                    <Navbar.Brand href="/">
+                        Angat Pinas
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link href="/trade">Trade</Nav.Link>
-                            <Nav.Link href="/earn">Earn</Nav.Link>
-                            <Nav.Link href="/nft">NFT</Nav.Link>
-                            <Nav.Link href="/lending">Lending</Nav.Link>
-                            <NavDropdown title="Win" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="/lottery">Lottery</NavDropdown.Item>
-                                <NavDropdown.Item href="/betting">Betting</NavDropdown.Item>
-                                <NavDropdown.Item href="/challenge">Trading Challenge</NavDropdown.Item>
-                            </NavDropdown>
+                            <Nav.Link href="/vote">Vote</Nav.Link>
+                            <Nav.Link href="/know">Know</Nav.Link>
+                            <Nav.Link href="/mission">Mission</Nav.Link>
+
                         </Nav>
                     </Navbar.Collapse>
 
                     <Navbar.Collapse className="justify-content-end">
-                        <Navbar.Text>
-                            Signed in as: 0x00000
-                        </Navbar.Text>
+                        <NavDropdown title="Signed in as: 0x00000" id="nav-dropdown">
+
+                            <NavDropdown.Item href="/purchase">Buy Voting Token</NavDropdown.Item>
+                        </NavDropdown>
+
                     </Navbar.Collapse>
                 </Container>
             </Navbar>

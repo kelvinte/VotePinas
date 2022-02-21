@@ -1,10 +1,10 @@
 import MainPane from "../components/MainPane";
 
-const Lottery = () =>{
+const Mission = () =>{
     return (
         <MainPane>
 
         </MainPane>
     )
 }
-export default Lottery;
+export default Mission;
